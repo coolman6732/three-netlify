@@ -1,0 +1,27 @@
+@import '../../../_build/node_modules/susy/sass/_susy';
+// @import '../../../_build/node_modules/susy/sass/plugins/svg-grid';
+
+$pad-1150: 1150px;
+$pad-1000: 1000px;
+$pad-900: 900px;
+$pad-768: 768px;
+$mobile-640: 640px;
+$mobile-468: 468px;
+$mobile-360: 360px;
+
+
+$susy: (
+	'columns': susy-repeat(14),
+	'gutters': 0,
+	'spread': 'wide',
+	'container-spread': 'wide',
+	'svg-grid-colors': hsla(210, 100%, 50%, 0.5) hsla(210, 100%, 75%, 0.5),
+);
+
+$mobile: (
+	'columns': susy-repeat(14),
+	'gutters': 0,
+	'spread': 'wide',
+	'container-spread': 'wide',
+	'svg-grid-colors': hsla(210, 100%, 50%, 0.5) hsla(210, 100%, 75%, 0.5),
+);

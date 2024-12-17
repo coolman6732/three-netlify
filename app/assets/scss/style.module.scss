@@ -1,0 +1,217 @@
+@import "grids";
+@import url('https://static.zeoseven.com/zsft/52/main/result.css');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200..900&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Serif+TC:wght@200..900&family=Yeseva+One&display=swap');
+$font-yahei: Arial, Helvetica, \5FAE\8EDF\6B63\9ED1\9AD4, sans-serif;
+$font-ming: Arial, Helvetica, \7EC6\660E\4F53, sans-serif;
+$img-path: "/images";
+
+.inner {
+    width: span(14 of 14);
+    max-width: 1580px;
+    margin: 0 auto;
+    lost-utility: clearfix;
+    padding: 0 span(0.3);
+    position: relative;
+}
+
+.header {
+    height: 90px;
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.1);
+
+    .inner {
+        display: flex;
+    }
+
+    .logo {
+        color: #000;
+        font-family: Lingui-ProRegular;
+        font-size: 18px;
+        flex: 0 0 50px;
+    }
+
+    &.fixNav {
+        position: fixed;
+        height: 70px;
+        width: 100%;
+        z-index: 10;
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.6);
+    }
+
+    ul {
+        margin-left: auto;
+        flex: 0 0 500px;
+
+        li {
+            lost-column: 1/4 4 50px;
+        }
+
+        a {
+            color: var(--font--color);
+            text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+            transition: all 300ms ease-in-out;
+            white-space: nowrap;
+            font-size: 18px;
+            font-family: "Noto Serif TC", serif;
+            font-weight: 500;
+
+            &.active,
+            &:hover {
+                color: var(--menu--hover--color);
+                text-shadow: none;
+            }
+        }
+    }
+}
+
+.banner {
+    h2.title {
+        font-family: "Noto Sans TC", sans-serif;
+        font-size: 58px;
+        font-weight: normal;
+
+    }
+
+    p.info {
+        margin-top: 30px;
+        font-size: 17px;
+        width: span(4 of 14);
+        line-height: 1.9em;
+    }
+}
+
+
+dl {
+    dd {
+        &.ddBg {
+            padding: 8% 0;
+            height: 600px;
+        }
+
+        .title {
+            font-family: "Noto Sans TC", sans-serif;
+            font-size: 58px;
+            font-weight: normal;
+            color: var(--font--color);
+            position: relative;
+            padding-bottom: 30px;
+
+            &::before {
+                content: '';
+                width: 60px;
+                height: 2px;
+                background: #cacaca;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+            }
+
+            b {
+                font-size: 16px;
+                color: #a5a5a5;
+                font-weight: normal;
+            }
+        }
+
+        .info {
+            line-height: 2.3em;
+            margin-top: 40px;
+            padding-right: span(2.5);
+        }
+
+
+        &.row1 {
+            background: url(#{$img-path}/row1Bg.png) no-repeat right center /50% 100%;
+        }
+
+        &.row2 {
+            background: url(#{$img-path}/row2Bg.png) no-repeat left center /45% 100%;
+
+            .left {
+                margin-left: span(7 of 14);
+            }
+        }
+
+        &.row3 {
+
+            .title {
+                text-align: center;
+
+                &::before {
+                    content: none;
+                }
+            }
+
+            ul {
+                h2 {
+                    color: #44afd6;
+                    font-weight: normal;
+                    font-size: 22px;
+                    margin-top: 20px;
+                }
+
+                p {
+                    color: var(--font--color);
+                    margin-top: 20px;
+                    line-height: 1.8em;
+                }
+
+                li {
+                    text-align: center;
+                    lost-column: 1/5 5 30px;
+                }
+            }
+        }
+    }
+
+    .left {
+        width: span(7 of 14);
+    }
+}
+
+footer {
+    &.footer {
+        padding: 5% 0;
+        background: #262626;
+        color: #fff;
+    }
+
+    .inner {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    ul.footerMu {
+        margin-top: 20px;
+        font-family: "Noto Serif TC", serif;
+
+        li {
+            lost-column: 1/4 4 20px;
+            line-height: normal;
+        }
+    }
+
+    .h5 {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .column {
+        flex: 0 0 30%;
+
+        &:last-child {
+            flex: 0 0 65%;
+        }
+
+        ul {
+            li {
+                line-height: 1.7em;
+            }
+        }
+    }
+}
