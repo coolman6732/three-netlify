@@ -6,10 +6,6 @@ export default function Header() {
     const [activeLink, setActiveLink] = useState('');
 
     useEffect(() => {
-        const script = document.createElement('script');
-        script.src = '/js/animatescroll.js';
-        document.body.appendChild(script);
-
         const handleScroll = () => {
             if (window.scrollY > 100) {
                 setIsScrolled(true);

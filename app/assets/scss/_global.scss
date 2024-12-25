@@ -2,15 +2,10 @@ $font-yahei: Arial, Helvetica, \5FAE\8EDF\6B63\9ED1\9AD4, sans-serif;
 $font-ming: Arial, Helvetica, \7EC6\660E\4F53, sans-serif;
 $img-path: "/images";
 
-
 @font-face {
-    font-family: 'Lingui-ProRegular';
-    src: url('/fonts/LinguisticsProRegular.eot');
-    src: url('/fonts/LinguisticsProRegular.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/LinguisticsProRegular.woff2') format('woff2'),
-        url('/fonts/LinguisticsProRegular.woff') format('woff'),
-        url('/fonts/LinguisticsProRegular.ttf') format('truetype'),
-        url('/fonts/LinguisticsProRegular.svg#CeraRoundProRegular') format('svg');
+    font-family: "Lingui-ProRegular";
+    src: url("/fonts/LinguisticsProRegular.eot");
+    src: url("/fonts/LinguisticsProRegular.eot?#iefix") format("embedded-opentype"), url("/fonts/LinguisticsProRegular.woff2") format("woff2"), url("/fonts/LinguisticsProRegular.woff") format("woff"), url("/fonts/LinguisticsProRegular.ttf") format("truetype"), url("/fonts/LinguisticsProRegular.svg#CeraRoundProRegular") format("svg");
 }
 
 :root {
@@ -56,8 +51,8 @@ input[type="button"] {
     cursor: pointer;
 }
 
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
@@ -69,10 +64,8 @@ body {
     scroll-behavior: smooth;
 }
 
-
 body {
     color: var(--font--color);
-    background: var(--background) url(#{$img-path}/bg.jpg) no-repeat center top / contain;
     font-family: Arial, Helvetica, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
