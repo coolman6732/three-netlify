@@ -14,7 +14,6 @@ export default function Footer() {
                             <li>Repp Technology Co., Limited</li>
                             <li>email  gloria.xiao@ariel.com.tw</li>
                             <li>Tel  +886 2 2788-3611</li>
-                            <li>114台北市內湖區 內湖路一段250號3樓</li>
                         </ul>
                     </div>
                     <div className={styles.column}>
