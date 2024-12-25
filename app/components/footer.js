@@ -12,7 +12,7 @@ export default function Footer() {
                         <h2>Contact</h2>
                         <ul>
                             <li>Repp Technology Co., Limited</li>
-                            <li>email  gloria.xiao@ariel.com.tw</li>
+                            <li>email  gloria.xiao@Repp.com.tw</li>
                             <li>Tel  +886 2 2788-3611</li>
                         </ul>
                     </div>
